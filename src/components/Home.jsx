@@ -26,8 +26,8 @@ const Home = () => {
       </div>
 
       <div className="home__btns-group">
-        <a href="#">Hire</a>
-        <a href="#contact">Contact</a>
+        <a className="btn" href="#">Hire</a>
+        <a className="btn" href="#contact">Contact</a>
       </div>
     </section>
   );

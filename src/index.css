@@ -75,7 +75,7 @@ button {
   align-items: center;
 }
 .header .navbar__logo {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -103,11 +103,23 @@ section {
   /* text-align: center; */
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-clr);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-clr);
+}
+
 .home {
   text-align: center;
 }
 .home__title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: -5px;
 }
 .home__title span,
@@ -147,22 +159,80 @@ section {
   gap: 25px;
   margin-top: 20px;
 }
-.home__btns-group a {
+.home__btns-group a:nth-child(2) {
+  color: var(--accent-clr);
+  background: var(--bg-clr);
+}
+
+a.btn {
   border: 2px solid var(--accent-clr);
   border-radius: 50px;
   padding: 10px 30px;
-  color: var(--accent-clr);
-  font-weight: 600;
-  box-shadow: 0 0 25px var(--accent-clr);
-  transition: .3s;
-}
-.home__btns-group a:nth-child(1) {
   color: var(--bg-clr);
   background: var(--accent-clr);
+  font-weight: 600;
+  box-shadow: 0 0 25px var(--accent-clr);
+  transition: 0.3s;
 }
-.home__btns-group a:hover {
+a.btn:hover {
   color: var(--bg-clr);
   background: var(--accent-clr);
   scale: 1.05;
   box-shadow: 0 0 25px var(--accent-clr), 0 0 50px var(--accent-clr);
+}
+
+.about {
+  text-align: center;
+}
+.about__title {
+  font-size: 2rem;
+}
+.about__title span {
+  color: var(--accent-clr);
+  letter-spacing: 1px;
+}
+.about__text {
+  color: var(--text-clr-2);
+  margin-block: 10px 30px;
+}
+.about a.btn i {
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.services {
+  text-align: center;
+  padding-block: 80px;
+}
+.services__title {
+  font-size: 2rem;
+  margin-bottom: -5px;
+}
+.services__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+.servies__service {
+  background: var(--accent-clr);
+  color: var(--bg-clr);
+  padding: 50px 20px;
+  border: 2px solid var(--accent-clr);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.servies__service:hover {
+  background: var(--bg-clr);
+  color: var(--accent-clr);
+}
+.servies__service i,
+.servies__service span {
+  font-size: 1.75rem;
+}
+.services__service-title {
+  margin-block: 10px 0;
+}
+.services__service-text {
+  font-size: 0.9rem;
 }

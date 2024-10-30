@@ -2,16 +2,21 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [themeMode, setThemeMode] = useState("dark");
+  const [themeMode, setThemeMode] = useState(
+    localStorage.getItem("themeMode") || "dark"
+  );
   const location = useLocation();
 
   const toggleThemeMode = () => {
     setThemeMode((t) => (t === "dark" ? "light" : "dark"));
   };
-  
+
   useEffect(() => {
-    document.body.classList.toggle("light-mode");
-  }, [themeMode])
+    localStorage.setItem("themeMode", themeMode);
+
+    if (themeMode === "dark") document.body.classList.remove("light-mode");
+    else document.body.classList.add("light-mode");
+  }, [themeMode]);
 
   return (
     <header className="header" id="header">

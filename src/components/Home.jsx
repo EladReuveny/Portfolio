@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <section className="home" id="home">
       <h1 className="home__title">
-        Hi, it's <span>Elad</span>
+        It's <span>Elad</span>
       </h1>
       <h3 className="home__subtitle">
         I'm a <span>Full Stack Developer</span>
@@ -17,17 +18,21 @@ const Home = () => {
       </p>
 
       <div className="home__social-links">
-        <a href="https://github.com/EladReuveny" target="_blank">
+        <Link to="https://github.com/EladReuveny" target="_blank">
           <i className="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/eladreuveny/" target="_blank">
+        </Link>
+        <Link to="https://www.linkedin.com/in/eladreuveny/" target="_blank">
           <i className="fa-brands fa-linkedin"></i>
-        </a>
+        </Link>
       </div>
 
       <div className="home__btns-group">
-        <a className="btn" href="#">Hire</a>
-        <a className="btn" href="#contact">Contact</a>
+        <Link to="/" className="btn">
+          Hire
+        </Link>
+        <Link to="/contact" className="btn btn--2">
+          Contact
+        </Link>
       </div>
     </section>
   );

@@ -56,10 +56,19 @@ button {
 }
 
 :root {
-  --text-clr: white;
-  --text-clr-2: lightgray;
-  --bg-clr: black;
-  --accent-clr: aqua;
+  --text-clr: hsl(0, 0%, 100%);
+  --text-clr-2: hsl(0, 0%, 83%);
+  --bg-clr: hsl(0, 0%, 0%);
+  --bg-clr-2: hsla(0, 0%, 0%, 0.4);
+  --accent-clr: hsl(180, 100%, 50%);
+}
+
+body.light-mode {
+  --text-clr: hsl(0, 0%, 0%);
+  --text-clr-2: hsl(0, 0%, 50%);
+  --bg-clr: hsl(0, 0%, 100%);
+  --bg-clr-2: hsla(0, 0%, 100%, 0.1);
+  --accent-clr: hsl(201, 68%, 61%);
 }
 
 .header {
@@ -67,17 +76,20 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 1rem 5%;
+  background: var(--bg-clr-2);
+  backdrop-filter: blur(5px);
 }
 .header .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .header .navbar__logo {
   font-size: 1.35rem;
   font-weight: 600;
   transition: 0.3s;
+  margin-right: 20px;
 }
 .header .navbar__logo:hover {
   scale: 1.03;
@@ -90,17 +102,26 @@ button {
   border-bottom: 2px solid transparent;
   transition: 0.3s;
 }
-/* .header .navbar__sections a.active {
-} */
 .header .navbar__sections a:hover {
   color: var(--accent-clr);
+}
+.header .navbar__sections a.active {
+  --light-bg-clr: hsla(201, 68%, 61%, 0.1);
+
+  color: var(--accent-clr);
   border-bottom-color: var(--accent-clr);
+  font-weight: 600;
+  background: var(--light-bg-clr);
+}
+.header .navbar__theme-mode span {
+  margin-left: 40px;
+  vertical-align: middle;
 }
 
 section {
   min-height: 100vh;
-  padding: 7rem 3rem;
-  /* text-align: center; */
+  padding: 80px 60px;
+  text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -115,9 +136,6 @@ section {
   background: var(--bg-clr);
 }
 
-.home {
-  text-align: center;
-}
 .home__title {
   font-size: 2rem;
   margin-bottom: -5px;
@@ -159,12 +177,8 @@ section {
   gap: 25px;
   margin-top: 20px;
 }
-.home__btns-group a:nth-child(2) {
-  color: var(--accent-clr);
-  background: var(--bg-clr);
-}
 
-a.btn {
+.btn {
   border: 2px solid var(--accent-clr);
   border-radius: 50px;
   padding: 10px 30px;
@@ -174,18 +188,21 @@ a.btn {
   box-shadow: 0 0 25px var(--accent-clr);
   transition: 0.3s;
 }
-a.btn:hover {
+.btn:hover {
   color: var(--bg-clr);
   background: var(--accent-clr);
   scale: 1.05;
   box-shadow: 0 0 25px var(--accent-clr), 0 0 50px var(--accent-clr);
 }
-
-.about {
-  text-align: center;
+.btn--2 {
+  color: var(--accent-clr);
+  background: var(--bg-clr);
 }
+
 .about__title {
   font-size: 2rem;
+  border-top: 2px solid var(--accent-clr);
+  border-bottom: 2px solid var(--accent-clr);
 }
 .about__title span {
   color: var(--accent-clr);
@@ -200,13 +217,11 @@ a.btn:hover {
   vertical-align: middle;
 }
 
-.services {
-  text-align: center;
-  padding-block: 80px;
-}
 .services__title {
   font-size: 2rem;
   margin-bottom: -5px;
+  border-top: 2px solid var(--accent-clr);
+  border-bottom: 2px solid var(--accent-clr);
 }
 .services__wrapper {
   display: grid;
@@ -231,8 +246,62 @@ a.btn:hover {
   font-size: 1.75rem;
 }
 .services__service-title {
-  margin-block: 10px 0;
+  margin-block: 5px 10px;
 }
 .services__service-text {
   font-size: 0.9rem;
+}
+
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: -5px;
+  border-top: 2px solid var(--accent-clr);
+  border-bottom: 2px solid var(--accent-clr);
+}
+.contact__title span {
+  color: var(--accent-clr);
+  letter-spacing: 1px;
+}
+.contact__text {
+  color: var(--text-clr-2);
+  margin-block: 30px;
+}
+.contact__form-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.contact__form .details-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contact__form-wrapper input,
+.contact__form-wrapper textarea {
+  color: var(--text-clr);
+  background: var(--bg-clr);
+  border: 2px solid var(--accent-clr);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 8px 20px;
+  resize: none;
+}
+.contact__form-wrapper textarea {
+  width: 150%;
+}
+.contact__form-wrapper input:focus-visible,
+.contact__form-wrapper textarea:focus-within {
+  box-shadow: 0 0 25px var(--accent-clr);
+}
+
+.footer {
+  text-align: center;
+  padding-block: 40px;
+}
+.footer .home__social-links {
+  margin-bottom: 10px;
 }

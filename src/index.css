@@ -58,6 +58,7 @@ button {
 :root {
   --text-clr: hsl(0, 0%, 100%);
   --text-clr-2: hsl(0, 0%, 83%);
+  --li-clr: hsl(60, 100%, 50%);
   --bg-clr: hsl(0, 0%, 0%);
   --bg-clr-2: hsla(0, 0%, 0%, 0.4);
   --accent-clr: hsl(180, 100%, 50%);
@@ -88,8 +89,8 @@ body.light-mode {
 .header .navbar__logo {
   font-size: 1.35rem;
   font-weight: 600;
-  transition: 0.3s;
   margin-right: 20px;
+  transition: 0.3s;
 }
 .header .navbar__logo:hover {
   scale: 1.03;
@@ -98,12 +99,15 @@ body.light-mode {
   color: var(--accent-clr);
 }
 .header .navbar__sections a {
+  display: inline-block;
   margin-left: 1.5rem;
   border-bottom: 2px solid transparent;
+  padding: 3px 5px;
   transition: 0.3s;
 }
 .header .navbar__sections a:hover {
   color: var(--accent-clr);
+  translate: 0 -3px;
 }
 .header .navbar__sections a.active {
   --light-bg-clr: hsla(201, 68%, 61%, 0.1);
@@ -114,8 +118,14 @@ body.light-mode {
   background: var(--light-bg-clr);
 }
 .header .navbar__theme-mode span {
+  font-size: 1.35rem;
   margin-left: 40px;
   vertical-align: middle;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header .navbar__theme-mode span:hover {
+  translate: 0 -3px;
 }
 
 section {
@@ -147,7 +157,8 @@ section {
 }
 .home__text {
   color: var(--text-clr-2);
-  margin-block: 10px 30px;
+  margin-block: 20px 30px;
+  padding: 0 100px;
 }
 .home__social-links {
   display: flex;
@@ -204,17 +215,35 @@ section {
   border-top: 2px solid var(--accent-clr);
   border-bottom: 2px solid var(--accent-clr);
 }
+.about__title i {
+  margin-right: 20px;
+}
 .about__title span {
   color: var(--accent-clr);
   letter-spacing: 1px;
 }
 .about__text {
   color: var(--text-clr-2);
-  margin-block: 10px 30px;
+  margin-block: 20px;
+}
+.about__tech-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+  color: var(--text-clr);
+  opacity: 0.9;
+  margin-block: 20px 30px;
+  font-size: 1.75rem;
 }
 .about a.btn i {
   margin-left: 15px;
   vertical-align: middle;
+  transition: 0.3s;
+}
+.about a.btn:hover i {
+  translate: 5px 0;
 }
 
 .services__title {
@@ -223,16 +252,19 @@ section {
   border-top: 2px solid var(--accent-clr);
   border-bottom: 2px solid var(--accent-clr);
 }
+.services__title i {
+  margin-right: 20px;
+}
 .services__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 20px;
   margin-top: 30px;
 }
 .servies__service {
   background: var(--accent-clr);
   color: var(--bg-clr);
-  padding: 50px 20px;
+  padding: 40px 30px;
   border: 2px solid var(--accent-clr);
   border-radius: 20px;
   transition: 0.3s;
@@ -240,16 +272,36 @@ section {
 .servies__service:hover {
   background: var(--bg-clr);
   color: var(--accent-clr);
+  translate: 0 -10px;
 }
 .servies__service i,
 .servies__service span {
   font-size: 1.75rem;
 }
 .services__service-title {
+  font-size: 1.35rem;
   margin-block: 5px 10px;
 }
-.services__service-text {
-  font-size: 0.9rem;
+.services__service-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.services__service-tech li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  white-space: nowrap;
+  margin-left: -10px;
+}
+.services__service-tech li i {
+  font-size: 1.2rem;
+  color: var(--li-clr);
+}
+body.light-mode .servies__service:hover .services__service-tech li i {
+  filter: hue-rotate(90deg);
 }
 
 .contact__title {
@@ -258,13 +310,16 @@ section {
   border-top: 2px solid var(--accent-clr);
   border-bottom: 2px solid var(--accent-clr);
 }
+.contact__title i {
+  margin-right: 20px;
+}
 .contact__title span {
   color: var(--accent-clr);
   letter-spacing: 1px;
 }
 .contact__text {
   color: var(--text-clr-2);
-  margin-block: 30px;
+  margin-block: 20px 30px;
 }
 .contact__form-wrapper {
   display: flex;
@@ -296,6 +351,9 @@ section {
 .contact__form-wrapper input:focus-visible,
 .contact__form-wrapper textarea:focus-within {
   box-shadow: 0 0 25px var(--accent-clr);
+}
+.contact__form button[type="submit"] i {
+  margin-left: 10px;
 }
 
 .footer {

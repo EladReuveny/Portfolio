@@ -11,10 +11,10 @@ const Home = () => {
         I'm a <span>Full Stack Developer</span>
       </h3>
       <p className="home__text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        quasi tenetur, eveniet libero dolore similique deleniti placeat magnam
-        dicta beatae adipisci deserunt provident reiciendis eligendi enim sequi
-        et, cum ullam.
+        Welcome! I'm a dedicated Full Stack Developer and Software Engineer with
+        a passion for building efficient, scalable web solutions. With
+        proficiency in Java, HTML, CSS, JavaScript, React, Spring Boot, SQL, C,
+        C++, Python and Smalltalk.
       </p>
 
       <div className="home__social-links">

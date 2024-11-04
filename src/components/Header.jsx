@@ -23,7 +23,7 @@ const Header = () => {
       <nav className="navbar">
         <div className="navbar__logo">
           <Link to="/" className="logo">
-            Elad <span>Reuveny</span>
+            <span>E</span>lad <span>R</span>euveny
           </Link>
         </div>
 
@@ -36,6 +36,12 @@ const Header = () => {
             className={location.pathname === "/about" ? "active" : ""}
           >
             About
+          </Link>
+          <Link
+            to="/projects"
+            className={location.pathname === "/projects" ? "active" : ""}
+          >
+            Projects
           </Link>
           <Link
             to="/services"

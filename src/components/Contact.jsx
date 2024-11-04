@@ -6,6 +6,7 @@ const Contact = () => {
     <>
       <section className="contact" id="contact">
         <h1 className="contact__title">
+          <i class="fa-solid fa-envelope"></i>
           Contact <span>Me</span>
         </h1>
         <p className="contact__text">
@@ -16,7 +17,6 @@ const Contact = () => {
         <form className="contact__form">
           <div className="contact__form-wrapper">
             <div className="details-wrapper">
-              {/* <label for="name">Name</label> */}
               <input
                 type="text"
                 id="name"
@@ -25,7 +25,6 @@ const Contact = () => {
                 required
               />
 
-              {/* <label for="email">Email</label> */}
               <input
                 type="email"
                 id="email"
@@ -34,7 +33,6 @@ const Contact = () => {
                 required
               />
 
-              {/* <label for="phone">Phone</label> */}
               <input
                 type="tel"
                 id="phone"
@@ -45,7 +43,6 @@ const Contact = () => {
             </div>
 
             <div className="message-wrapper">
-              {/* <label for="message">Message</label> */}
               <textarea
                 id="message"
                 name="message"
@@ -55,7 +52,8 @@ const Contact = () => {
             </div>
           </div>
           <button type="submit" className="btn">
-            Send Message
+            Let's Talk
+            <i class="fa-solid fa-paper-plane"></i>
           </button>
         </form>
       </section>

@@ -14,8 +14,8 @@ const Footer = () => {
       </div>
 
       <code>
-        <i className="fa-regular fa-copyright"></i> Elad Reuveny | All rights
-        reserved. {new Date().getFullYear()}
+        Created by Elad Reuveny | <i className="fa-regular fa-copyright"></i>{" "}
+        {new Date().getFullYear()} All Rights Reserved
       </code>
     </footer>
   );

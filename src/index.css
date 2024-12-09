@@ -363,3 +363,17 @@ body.light-mode .servies__service:hover .services__service-tech li i {
 .footer .home__social-links {
   margin-bottom: 10px;
 }
+
+.projects__title {
+  font-size: 2rem;
+  margin-bottom: -5px;
+  border-top: 2px solid var(--accent-clr);
+  border-bottom: 2px solid var(--accent-clr);
+}
+.projects__title i {
+  margin-right: 13px;
+}
+
+.projects__wrapper {
+  
+}

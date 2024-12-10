@@ -57,8 +57,6 @@ const Contact = () => {
           </button>
         </form>
       </section>
-
-      <Footer />
     </>
   );
 };

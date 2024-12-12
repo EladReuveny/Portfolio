@@ -66,7 +66,7 @@ button {
 
 body.light-mode {
   --text-clr: hsl(0, 0%, 0%);
-  --text-clr-2: hsl(0, 0%, 50%);
+  --text-clr-2: hsl(0, 0%, 40%);
   --bg-clr: hsl(0, 0%, 100%);
   --bg-clr-2: hsla(0, 0%, 100%, 0.1);
   --accent-clr: hsl(201, 68%, 61%);
@@ -94,7 +94,7 @@ body.light-mode {
 }
 .header .navbar__logo:hover {
   scale: 1.01;
-  text-shadow: 0 0 5px var(--accent-clr);
+  text-shadow: 0 0 3px var(--accent-clr);
 }
 .header .navbar__logo .logo span {
   color: var(--accent-clr);
@@ -102,11 +102,13 @@ body.light-mode {
 .header .navbar__sections a {
   display: inline-block;
   margin-left: 1.5rem;
+  color: var(--text-clr-2);
   border-bottom: 2px solid transparent;
   padding: 3px 5px;
   transition: 0.3s;
 }
 .header .navbar__sections a:hover {
+  color: var(--text-clr);
   border-bottom-color: var(--accent-clr);
 }
 .header .navbar__sections a.active {
@@ -142,6 +144,10 @@ section {
   background: var(--accent-clr);
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-clr);
+}
+
 ::-webkit-scrollbar-track {
   background: var(--bg-clr);
 }
@@ -150,11 +156,20 @@ section {
   font-size: 2rem;
   margin-bottom: -5px;
 }
-.home__title span,
-.home__subtitle span {
+.home__title span {
+  -webkit-text-stroke: 1.25px var(--accent-clr);
   color: var(--accent-clr);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
+.home__subtitle {
+  font-size: 1.5rem;
+}
+.home__subtitle span {
+  -webkit-text-stroke: 1.25px var(--accent-clr);
+  color: transparent;
+  letter-spacing: 5px;
+}
+
 .home__text {
   color: var(--text-clr-2);
   margin-block: 20px 30px;
@@ -402,8 +417,9 @@ body.light-mode .servies__service:hover .services__service-tech li i {
   justify-content: center;
   align-items: center;
   box-shadow: -4px 4px 30px -11px var(--accent-clr);
+  border-left: 2px solid var(--accent-clr);
   padding: 20px 40px;
-  border-radius: 25px;
+  border-radius: 10px;
   position: relative;
   transition: 0.3s;
 }
@@ -449,4 +465,16 @@ body.light-mode .servies__service:hover .services__service-tech li i {
 .projects__project:hover .projects__project-links {
   height: 100%;
   opacity: 0.8;
+}
+.projects__project > i {
+  font-size: 1.75rem;
+  animation: smoothBounce2 1.25s linear infinite alternate;
+}
+@keyframes smoothBounce2 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 8px);
+  }
 }

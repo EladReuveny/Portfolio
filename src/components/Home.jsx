@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Typed from "typed.js";
 
 const Home = () => {
+  useEffect(() => {
+    const typed = new Typed(".type-writer", {
+      strings: ["Full Stack Developer", "Software Engineer"],
+      typeSpeed: 100, // Speed of typing
+      backSpeed: 100, // Speed of backspacing
+      backDelay: 1500,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <section className="home" id="home">
       <h1 className="home__title">
         It's <span>Elad</span>
       </h1>
       <h3 className="home__subtitle">
-        I'm a <span>Full Stack Developer</span>
+        I'm a <span className="type-writer"></span>
       </h3>
       <p className="home__text">
         Welcome! I'm a dedicated Full Stack Developer and Software Engineer with
@@ -27,8 +42,8 @@ const Home = () => {
       </div>
 
       <div className="home__btns-group">
-        <Link to="/" className="btn">
-          Hire
+        <Link to="/services" className="btn">
+          Services
         </Link>
         <Link to="/contact" className="btn btn--2">
           Contact

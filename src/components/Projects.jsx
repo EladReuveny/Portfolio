@@ -374,6 +374,7 @@ const Projects = () => {
                 </li>
               ))}
             </ul>
+            <i class="fa-sharp fa-solid fa-down-long"></i>
             <div className="projects__project-links">
               <a href={project.sourceCode} target="_blank" title="Source Code">
                 <i className="fas fa-code"></i>

@@ -5,6 +5,8 @@ const Header = () => {
   const [themeMode, setThemeMode] = useState(
     localStorage.getItem("themeMode") || "dark"
   );
+  const [isMenuBarActive, setIsMenuBarActive] = useState(false);
+
   const location = useLocation();
 
   const toggleThemeMode = () => {
@@ -18,6 +20,20 @@ const Header = () => {
     else document.body.classList.add("light-mode");
   }, [themeMode]);
 
+  useEffect(() => {
+    const navBarSection = document.querySelector(".navbar__sections");
+    navBarSection.classList.remove("menu-bar-active");
+
+    setIsMenuBarActive(false);
+  }, [location]);
+
+  const toggleMenuBar = () => {
+    const navBarSection = document.querySelector(".navbar__sections");
+    navBarSection.classList.toggle("menu-bar-active");
+
+    setIsMenuBarActive((m) => !m);
+  };
+
   return (
     <header className="header" id="header">
       <nav className="navbar">
@@ -28,6 +44,17 @@ const Header = () => {
         </div>
 
         <div className="navbar__sections">
+          {isMenuBarActive ? (
+            <i
+              className="fa-solid fa-xmark navbar__menu-bar"
+              onClick={toggleMenuBar}
+            ></i>
+          ) : (
+            <i
+              className="fa-solid fa-bars navbar__menu-bar"
+              onClick={toggleMenuBar}
+            ></i>
+          )}
           <Link to="/" className={location.pathname === "/" ? "active" : ""}>
             Home
           </Link>

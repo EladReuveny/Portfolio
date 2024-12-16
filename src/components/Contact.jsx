@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 
 const Contact = () => {
   return (
@@ -16,41 +15,50 @@ const Contact = () => {
 
         <form className="contact__form">
           <div className="contact__form-wrapper">
-            <div className="details-wrapper">
+            <div className="details-field">
               <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Name"
+                placeholder=""
                 required
               />
+              <label htmlFor="name">Name</label>
+            </div>
 
+            <div className="details-field">
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Email"
+                placeholder=""
                 required
               />
+              <label htmlFor="email">Email</label>
+            </div>
 
+            <div className="details-field">
               <input
                 type="tel"
                 id="phone"
                 name="phone"
-                placeholder="Phone"
+                placeholder=""
                 required
               />
+              <label htmlFor="phone">Phone</label>
             </div>
 
-            <div className="message-wrapper">
+            <div className="details-field">
               <textarea
                 id="message"
                 name="message"
                 rows="4"
-                placeholder="Message..."
+                placeholder=""
               ></textarea>
+              <label htmlFor="message">Message</label>
             </div>
           </div>
+
           <button type="submit" className="btn">
             Let's Talk
             <i class="fa-solid fa-paper-plane"></i>

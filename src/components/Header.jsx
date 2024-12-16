@@ -87,14 +87,14 @@ const Header = () => {
         <div className="navbar__theme-mode">
           {themeMode === "dark" ? (
             <span
-              className="material-symbols-outlined"
+              className="material-symbols-outlined light-mode"
               onClick={toggleThemeMode}
             >
               light_mode
             </span>
           ) : (
             <span
-              className="material-symbols-outlined"
+              className="material-symbols-outlined dark-mode"
               onClick={toggleThemeMode}
             >
               dark_mode

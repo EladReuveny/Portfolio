@@ -23,7 +23,10 @@ const Home = () => {
         It's <span>Elad</span>
       </h1>
       <h3 className="home__subtitle">
-        I'm a <span className="type-writer"></span>
+        I'm a <div className="typewriter-wrapper">
+
+          <span className="type-writer"></span>
+        </div>
       </h3>
       <p className="home__text">
         Welcome! I'm a dedicated Full Stack Developer and Software Engineer with

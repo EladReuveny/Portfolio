@@ -15,7 +15,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-html5"
-              style={{ color: "#E44D26" }}
+              style={{ color: "#E44D26", fontSize: "45px" }}
               title="HTML5"
             ></i>
           ),
@@ -25,7 +25,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-css3-alt"
-              style={{ color: "#1572B6" }}
+              style={{ color: "#1572B6", fontSize: "45px" }}
               title="CSS3"
             ></i>
           ),
@@ -35,7 +35,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-js"
-              style={{ color: "#F7DF1E" }}
+              style={{ color: "#F7DF1E", fontSize: "45px" }}
               title="JavaScript"
             ></i>
           ),
@@ -45,7 +45,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-react"
-              style={{ color: "#61DAFB" }}
+              style={{ color: "#61DAFB", fontSize: "45px" }}
               title="React"
             ></i>
           ),
@@ -65,7 +65,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-html5"
-              style={{ color: "#E44D26" }}
+              style={{ color: "#E44D26", fontSize: "45px" }}
               title="HTML5"
             ></i>
           ),
@@ -75,7 +75,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-css3-alt"
-              style={{ color: "#1572B6" }}
+              style={{ color: "#1572B6", fontSize: "45px" }}
               title="CSS3"
             ></i>
           ),
@@ -85,7 +85,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-js"
-              style={{ color: "#F7DF1E" }}
+              style={{ color: "#F7DF1E", fontSize: "45px" }}
               title="JavaScript"
             ></i>
           ),
@@ -95,7 +95,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-react"
-              style={{ color: "#61DAFB" }}
+              style={{ color: "#61DAFB", fontSize: "45px" }}
               title="React"
             ></i>
           ),
@@ -117,8 +117,8 @@ const Projects = () => {
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="45"
-              height="45"
+              width="55"
+              height="55"
               viewBox="0 0 48 48"
             >
               <path
@@ -165,9 +165,9 @@ const Projects = () => {
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="45"
-              height="45"
-              viewBox="0 0 48 48"
+              width="55"
+              height="55"
+              viewBox="0 -3 48 48"
             >
               <path
                 fill="#F44336"
@@ -219,9 +219,9 @@ const Projects = () => {
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="45"
-              height="45"
-              viewBox="0 0 48 48"
+              width="55"
+              height="55"
+              viewBox="0 -3 48 48"
             >
               <path
                 fill="#F44336"
@@ -273,9 +273,9 @@ const Projects = () => {
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="45"
-              height="45"
-              viewBox="0 0 48 48"
+              width="55"
+              height="55"
+              viewBox="0 -3 48 48"
             >
               <path
                 fill="#F44336"
@@ -325,7 +325,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-html5"
-              style={{ color: "#E44D26" }}
+              style={{ color: "#E44D26", fontSize: "45px" }}
               title="HTML5"
             ></i>
           ),
@@ -335,7 +335,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-css3-alt"
-              style={{ color: "#1572B6" }}
+              style={{ color: "#1572B6", fontSize: "45px" }}
               title="CSS3"
             ></i>
           ),
@@ -345,7 +345,7 @@ const Projects = () => {
           logo: (
             <i
               className="fab fa-js"
-              style={{ color: "#F7DF1E" }}
+              style={{ color: "#F7DF1E", fontSize: "45px" }}
               title="JavaScript"
             ></i>
           ),

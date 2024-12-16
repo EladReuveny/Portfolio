@@ -8,7 +8,7 @@ const Services = () => {
       </h1>
 
       <div className="services__wrapper">
-        <div className="servies__service">
+        <div className="services__service">
           <i className="fas fa-code"></i>
           <h3 className="services__service-title">Frontend Development</h3>
           <p className="services__service-text">
@@ -33,7 +33,7 @@ const Services = () => {
           </ul>
         </div>
 
-        <div className="servies__service">
+        <div className="services__service">
           <span className="material-symbols-outlined">data_object</span>
           <h3 className="services__service-title">Backend Development</h3>
           <p className="services__service-text">
@@ -60,7 +60,7 @@ const Services = () => {
           </ul>
         </div>
 
-        <div className="servies__service">
+        <div className="services__service">
           <i className="fa-solid fa-comments "></i>
           <h3 className="services__service-title">Personal & Soft Skills</h3>
           <p className="services__service-text">

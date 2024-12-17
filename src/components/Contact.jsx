@@ -1,6 +1,28 @@
 import React from "react";
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const phone = e.target.phone.value;
+    const message = e.target.message.value;
+
+    const subject = `Portfolio - Contact from ${name}`;
+    const body = `
+    Name: ${name}
+    Email: ${email}
+    Phone: ${phone}
+    
+    Message:
+    ${message}
+    `;
+
+    const mailtoLink = `mailto:eladre123@gmail.com?subject=${subject}&body=${body}`;
+    window.open(mailtoLink, "_blank");
+  };
+
   return (
     <>
       <section className="contact" id="contact">
@@ -13,7 +35,8 @@ const Contact = () => {
           reach out!
         </p>
 
-        <form className="contact__form">
+        {/* <form className="contact__form" action="mailto:eladre123@gmail.com" method="POST"> */}
+        <form className="contact__form" onSubmit={handleSubmit}>
           <div className="contact__form-wrapper">
             <div className="details-field">
               <input
@@ -22,6 +45,7 @@ const Contact = () => {
                 name="name"
                 placeholder=""
                 required
+                autoFocus
               />
               <label htmlFor="name">Name</label>
             </div>

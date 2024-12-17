@@ -6,8 +6,8 @@ const Home = () => {
   useEffect(() => {
     const typed = new Typed(".type-writer", {
       strings: ["Full Stack Developer", "Software Engineer"],
-      typeSpeed: 100, // Speed of typing
-      backSpeed: 100, // Speed of backspacing
+      typeSpeed: 100, 
+      backSpeed: 100, 
       backDelay: 1500,
       loop: true,
     });

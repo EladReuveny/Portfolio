@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Resume from "../assets/Resume.pdf";
 
 const About = () => {
   return (
@@ -270,9 +271,15 @@ const About = () => {
         </abbr>
       </div>
 
-      <Link to="/projects" className="btn">
-        My Projects<i className="fa-solid fa-arrow-right"></i>
-      </Link>
+      <div className="home__btns-group">
+        <Link to="/projects" className="btn">
+          My Projects <i className="fa-solid fa-arrow-right"></i>
+        </Link>
+
+        <a href={Resume} className="btn btn--2" download>
+          Download CV <i className="fa-solid fa-download"></i>
+        </a>
+      </div>
     </section>
   );
 };

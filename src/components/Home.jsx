@@ -6,8 +6,8 @@ const Home = () => {
   useEffect(() => {
     const typed = new Typed(".type-writer", {
       strings: ["Full Stack Developer", "Software Engineer"],
-      typeSpeed: 100, 
-      backSpeed: 100, 
+      typeSpeed: 100,
+      backSpeed: 100,
       backDelay: 1500,
       loop: true,
     });
@@ -23,25 +23,30 @@ const Home = () => {
         It's <span>Elad</span>
       </h1>
       <h3 className="home__subtitle">
-        I'm a <div className="typewriter-wrapper">
-
+        I'm a{" "}
+        <div className="typewriter-wrapper">
           <span className="type-writer"></span>
         </div>
       </h3>
       <p className="home__text">
         Welcome! I'm a dedicated Full Stack Developer and Software Engineer with
         a passion for building efficient, scalable web solutions. With
-        proficiency in Java, HTML, CSS, JavaScript, React, Spring Boot, SQL, C,
-        C++, Python and Smalltalk.
+        proficiency in Java, HTML5, CSS3, JavaScript, C, C++, Python, Smalltalk,
+        React, Spring Boot, TailwindCSS, PostgreSQL, MySQL, Git & GitHub,
+        Postman, Linux and Figma.
       </p>
 
       <div className="home__social-links">
-        <Link to="https://github.com/EladReuveny" target="_blank">
+        <a href="https://github.com/EladReuveny" target="_blank" title="GitHub">
           <i className="fa-brands fa-github"></i>
-        </Link>
-        <Link to="https://www.linkedin.com/in/eladreuveny/" target="_blank">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/eladreuveny/"
+          target="_blank"
+          title="LinkedIn"
+        >
           <i className="fa-brands fa-linkedin"></i>
-        </Link>
+        </a>
       </div>
 
       <div className="home__btns-group">

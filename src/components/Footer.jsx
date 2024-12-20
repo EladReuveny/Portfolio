@@ -5,12 +5,16 @@ const Footer = () => {
   return (
     <footer className="footer" id="footer">
       <div className="home__social-links">
-        <Link to="https://github.com/EladReuveny" target="_blank">
+        <a href="https://github.com/EladReuveny" target="_blank" title="GitHub">
           <i className="fa-brands fa-github"></i>
-        </Link>
-        <Link to="https://www.linkedin.com/in/eladreuveny/" target="_blank">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/eladreuveny/"
+          target="_blank"
+          title="LinkedIn"
+        >
           <i className="fa-brands fa-linkedin"></i>
-        </Link>
+        </a>
       </div>
 
       <code>

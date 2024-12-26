@@ -1,10 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projectsData = [
     {
       id: 1,
+      title: "AssemblyProject",
+      description:
+        "Assembly project which converts assmebly code to machine code using the language C.",
+      liveDemo: "",
+      sourceCode: "https://github.com/EladReuveny/assembly-project",
+      technologies: [
+        {
+          name: "C",
+          logo: (
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
+              alt="C"
+              width="60"
+              height="60"
+            />
+          ),
+        },
+      ],
+    },
+    {
+      id: 2,
       title: "TicTacToe",
       description: "TicTacToe project using HTML, CSS, JavaScript, and React.",
       liveDemo: "https://genuine-bunny-089a3f.netlify.app/",
@@ -16,8 +36,8 @@ const Projects = () => {
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
               alt="HTML5"
-              width="60"
-              height="60"
+              width="65"
+              height="65"
             />
           ),
         },
@@ -27,62 +47,8 @@ const Projects = () => {
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
               alt="CSS3"
-              width="60"
-              height="60"
-            />
-          ),
-        },
-        {
-          name: "JavaScript",
-          logo: (
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-              alt="JavaScript"
-              width="50"
-              height="50"
-            />
-          ),
-        },
-        {
-          name: "React",
-          logo: (
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-              alt="React"
-              width="60"
-              height="60"
-            />
-          ),
-        },
-      ],
-    },
-    {
-      id: 2,
-      title: "PokemonSearchApp",
-      description:
-        "Pokemon Search App project to search for Pokemons and their evolutions based on ID or Name.",
-      liveDemo: "https://incomparable-beijinho-313dbc.netlify.app/",
-      sourceCode: "https://github.com/EladReuveny/pokemon-search-app",
-      technologies: [
-        {
-          name: "HTML5",
-          logo: (
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-              alt="HTML5"
-              width="60"
-              height="60"
-            />
-          ),
-        },
-        {
-          name: "CSS3",
-          logo: (
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-              alt="CSS3"
-              width="60"
-              height="60"
+              width="65"
+              height="65"
             />
           ),
         },
@@ -112,18 +78,51 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "AssemblyProject",
+      title: "PokemonSearchApp",
       description:
-        "Assembly project which converts assmebly code to machine code using the language C.",
-      liveDemo: "",
-      sourceCode: "https://github.com/EladReuveny/assembly-project",
+        "Pokemon Search App project to search for Pokemons and their evolutions based on ID or Name.",
+      liveDemo: "https://incomparable-beijinho-313dbc.netlify.app/",
+      sourceCode: "https://github.com/EladReuveny/pokemon-search-app",
       technologies: [
         {
-          name: "C",
+          name: "HTML5",
           logo: (
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
-              alt="C"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+              alt="HTML5"
+              width="65"
+              height="65"
+            />
+          ),
+        },
+        {
+          name: "CSS3",
+          logo: (
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+              alt="CSS3"
+              width="65"
+              height="65"
+            />
+          ),
+        },
+        {
+          name: "JavaScript",
+          logo: (
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              width="50"
+              height="50"
+            />
+          ),
+        },
+        {
+          name: "React",
+          logo: (
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+              alt="React"
               width="60"
               height="60"
             />
@@ -208,8 +207,8 @@ const Projects = () => {
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
               alt="HTML5"
-              width="60"
-              height="60"
+              width="65"
+              height="65"
             />
           ),
         },
@@ -219,8 +218,8 @@ const Projects = () => {
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
               alt="CSS3"
-              width="60"
-              height="60"
+              width="65"
+              height="65"
             />
           ),
         },

@@ -27,7 +27,7 @@ const Contact = () => {
     <>
       <section className="contact" id="contact">
         <h1 className="contact__title">
-          <i class="fa-solid fa-envelope"></i>
+          <i className="fa-solid fa-envelope"></i>
           Contact <span>Me</span>
         </h1>
         <p className="contact__text">
@@ -85,7 +85,7 @@ const Contact = () => {
 
           <button type="submit" className="btn">
             Let's Talk
-            <i class="fa-solid fa-paper-plane"></i>
+            <i className="fa-solid fa-paper-plane"></i>
           </button>
         </form>
       </section>

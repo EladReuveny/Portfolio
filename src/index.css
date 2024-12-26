@@ -61,6 +61,7 @@ button {
   --li-clr: hsl(60, 100%, 50%);
   --bg-clr: hsl(0, 0%, 0%);
   --bg-clr-2: hsla(0, 0%, 0%, 0.4);
+  --light-bg-clr: hsla(201, 68%, 61%, 0.1);
   /* --accent-clr: hsl(180, 100%, 50%); */
 }
 
@@ -117,8 +118,6 @@ body.light-mode {
   border-bottom-color: var(--accent-clr);
 }
 .header .navbar__sections a.active {
-  --light-bg-clr: hsla(201, 68%, 61%, 0.1);
-
   color: var(--accent-clr);
   border-bottom-color: var(--accent-clr);
   font-weight: 600;
@@ -496,6 +495,7 @@ section {
   background: var(--accent-clr);
   font-weight: 600;
   box-shadow: 0 0 25px var(--accent-clr);
+  white-space: nowrap;
   transition: 0.3s;
 }
 .btn:hover {
@@ -512,7 +512,6 @@ section {
 @media (width <= 500px) {
   .btn {
     padding: 20px 90px;
-    white-space: nowrap;
   }
 }
 
@@ -535,13 +534,52 @@ section {
 }
 .about__tech-icons {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  font-size: 1.5rem;
+  color: var(--text-clr);
+  margin-block: 20px 50px;
+}
+.about__tech-icons > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10px 30px;
+  padding-left: 20px;
+  background: var(--light-bg-clr);
+  border-left: 4px solid var(--accent-clr);
+  transition: .3s;
+}
+.about__tech-icons > div:hover {
+  filter: brightness(1.1);
+}
+.about__tech-icons > div .icons {
+  display: flex;
+  gap: 35px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 1.75rem;
+}
+.about__tech-icons > div .icons a {
+  position: relative;
+}
+.about__tech-icons > div .icons a::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  translate: -50% 0;
+  font-size: .75rem;
   color: var(--text-clr);
-  margin-block: 20px 30px;
+  white-space: nowrap;
+}
+.about__tech-icons > div .icons a img {
+  width: 60px;
+  height: 60px;
 }
 .about a.btn i {
   margin-left: 10px;
@@ -554,7 +592,17 @@ section {
 /* ------------------ About - Media Queries (Mobile Design) ------------------ */
 @media (width <= 500px) {
   .about__tech-icons {
-    gap: 15px;
+    gap: 30px;
+  }
+  .about__tech-icons {
+    font-size: 1.2rem;
+  }
+  .about__tech-icons > div .icons {
+    gap: 45px;
+  }
+  .about__tech-icons > div .icons a img {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -598,7 +646,7 @@ section {
 }
 .projects__project-technologies {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -777,7 +825,7 @@ body.light-mode .services__service:hover .services__service-tech li i {
 .contact__form-wrapper input:not(:placeholder-shown) + label,
 .contact__form-wrapper textarea:focus + label,
 .contact__form-wrapper textarea:not(:placeholder-shown) + label {
-  top: -12px;
+  top: -10px;
   background: var(--bg-clr);
   font-size: 0.8rem;
   padding-inline: 6px;

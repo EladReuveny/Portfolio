@@ -29,11 +29,13 @@ const Home = () => {
         </div>
       </h3>
       <p className="home__text">
-        Welcome! I'm a dedicated Full Stack Developer and Software Engineer with
-        a passion for building efficient, scalable web solutions. With
-        proficiency in Java, HTML5, CSS3, JavaScript, C, C++, Python, Smalltalk,
-        React, Spring Boot, TailwindCSS, PostgreSQL, MySQL, Git & GitHub,
-        Postman, Linux and Figma.
+        Welcome! I'm a dedicated Full Stack Developer/Software Engineer with a
+        bachelor's degree (B.Sc.) in Computer Science from The Open University
+        of Israel. Passionate about Problem-Solving, Web Development, and
+        exploring new technologies. With proficiency and experience in Java,
+        HTML5, CSS3, JavaScript, C, C++, Python, Smalltalk, React, Spring Boot,
+        TailwindCSS, PostgreSQL, MySQL, Git & GitHub, Postman, Figma, Linux, VS
+        Code, IntelliJ IDEA, CLion.
       </p>
 
       <div className="home__social-links">

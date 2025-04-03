@@ -6,7 +6,7 @@ const Projects = () => {
       id: 1,
       title: "Electronics E-Commerce Shop",
       description:
-        "A full-stack e-commerce application for electronics, including features include product management, user authentication, wish list, shopping cart, order processing, etc.",
+        "Developed a full-stack e-commerce application for electronics with secure authentication, product management, wishlist, shopping cart, order processing, etc.",
       liveDemo: "https://electronics-store-app.netlify.app",
       sourceCode: {
         backend: "https://github.com/EladReuveny/electronics-store-api",
@@ -28,7 +28,7 @@ const Projects = () => {
           name: "React",
           logo: (
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
               alt="React"
               width="60"
               height="60"
@@ -39,10 +39,10 @@ const Projects = () => {
           name: "PostgreSQL",
           logo: (
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
               alt="PostgreSQL"
-              width="60"
-              height="60"
+              width="65"
+              height="65"
             />
           ),
         },
@@ -56,7 +56,6 @@ const Projects = () => {
       liveDemo: "",
       sourceCode: {
         backend: "https://github.com/EladReuveny/assembly-project",
-        frontend: "",
       },
       technologies: [
         {
@@ -79,7 +78,6 @@ const Projects = () => {
         "Pokemon Search App project to search for Pokemons and their evolutions based on ID or Name.",
       liveDemo: "https://incomparable-beijinho-313dbc.netlify.app/",
       sourceCode: {
-        backend: "",
         frontend: "https://github.com/EladReuveny/pokemon-search-app",
       },
       technologies: [
@@ -135,7 +133,6 @@ const Projects = () => {
       description: "TicTacToe project using HTML, CSS, JavaScript, and React.",
       liveDemo: "https://genuine-bunny-089a3f.netlify.app/",
       sourceCode: {
-        backend: "",
         frontend: "https://github.com/EladReuveny/TicTacToe",
       },
       technologies: [
@@ -194,7 +191,6 @@ const Projects = () => {
       liveDemo: "",
       sourceCode: {
         backend: "https://github.com/EladReuveny/student-sorted-group-manager",
-        frontend: "",
       },
       technologies: [
         {
@@ -218,7 +214,6 @@ const Projects = () => {
       liveDemo: "",
       sourceCode: {
         backend: "https://github.com/EladReuveny/restaurant-menu-manager",
-        frontend: "",
       },
       technologies: [
         {
@@ -242,7 +237,6 @@ const Projects = () => {
       liveDemo: "",
       sourceCode: {
         backend: "https://github.com/EladReuveny/TrafficLight",
-        frontend: "",
       },
       technologies: [
         {
@@ -265,7 +259,7 @@ const Projects = () => {
         "Personal Finance App project contains 5 pages (Overview, Transactions, Budgets, Pots, and Recurring Bills) + supports responsiveness for Desktop/Tablet/Moible Design.",
       liveDemo: "https://idyllic-treacle-59d4ed.netlify.app/",
       sourceCode: {
-        backend: "",
+
         frontend: "https://github.com/EladReuveny/personal-finance",
       },
       technologies: [

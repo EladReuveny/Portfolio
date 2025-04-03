@@ -4,11 +4,59 @@ const Projects = () => {
   const projectsData = [
     {
       id: 1,
+      title: "Electronics E-Commerce Shop",
+      description:
+        "Developed a full-stack e-commerce application for electronics with secure authentication, product management, wishlist, shopping cart, order processing, etc.",
+      liveDemo: "https://electronics-store-app.netlify.app",
+      sourceCode: {
+        backend: "https://github.com/EladReuveny/electronics-store-api",
+        frontend: "https://github.com/EladReuveny/electronics-store-ui",
+      },
+      technologies: [
+        {
+          name: "Spring Boot",
+          logo: (
+            <img
+              src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
+              alt="Spring"
+              width="60"
+              height="60"
+            />
+          ),
+        },
+        {
+          name: "React",
+          logo: (
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+              alt="React"
+              width="60"
+              height="60"
+            />
+          ),
+        },
+        {
+          name: "PostgreSQL",
+          logo: (
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+              alt="PostgreSQL"
+              width="65"
+              height="65"
+            />
+          ),
+        },
+      ],
+    },
+    {
+      id: 2,
       title: "AssemblyProject",
       description:
         "Assembly project which converts assmebly code to machine code using the language C.",
       liveDemo: "",
-      sourceCode: "https://github.com/EladReuveny/assembly-project",
+      sourceCode: {
+        backend: "https://github.com/EladReuveny/assembly-project",
+      },
       technologies: [
         {
           name: "C",
@@ -24,65 +72,14 @@ const Projects = () => {
       ],
     },
     {
-      id: 2,
-      title: "TicTacToe",
-      description: "TicTacToe project using HTML, CSS, JavaScript, and React.",
-      liveDemo: "https://genuine-bunny-089a3f.netlify.app/",
-      sourceCode: "https://github.com/EladReuveny/TicTacToe",
-      technologies: [
-        {
-          name: "HTML5",
-          logo: (
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-              alt="HTML5"
-              width="65"
-              height="65"
-            />
-          ),
-        },
-        {
-          name: "CSS3",
-          logo: (
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-              alt="CSS3"
-              width="65"
-              height="65"
-            />
-          ),
-        },
-        {
-          name: "JavaScript",
-          logo: (
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-              alt="JavaScript"
-              width="50"
-              height="50"
-            />
-          ),
-        },
-        {
-          name: "React",
-          logo: (
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-              alt="React"
-              width="60"
-              height="60"
-            />
-          ),
-        },
-      ],
-    },
-    {
       id: 3,
       title: "PokemonSearchApp",
       description:
         "Pokemon Search App project to search for Pokemons and their evolutions based on ID or Name.",
       liveDemo: "https://incomparable-beijinho-313dbc.netlify.app/",
-      sourceCode: "https://github.com/EladReuveny/pokemon-search-app",
+      sourceCode: {
+        frontend: "https://github.com/EladReuveny/pokemon-search-app",
+      },
       technologies: [
         {
           name: "HTML5",
@@ -132,18 +129,52 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "StudentSortedGroupManager",
-      description:
-        "Student Sorted Group Manager project that manages a sorted group of students and allows users to add and remove students interactively.",
-      liveDemo: "",
-      sourceCode: "https://github.com/EladReuveny/student-sorted-group-manager",
+      title: "TicTacToe",
+      description: "TicTacToe project using HTML, CSS, JavaScript, and React.",
+      liveDemo: "https://genuine-bunny-089a3f.netlify.app/",
+      sourceCode: {
+        frontend: "https://github.com/EladReuveny/TicTacToe",
+      },
       technologies: [
         {
-          name: "Java",
+          name: "HTML5",
           logo: (
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-              alt="Java"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+              alt="HTML5"
+              width="65"
+              height="65"
+            />
+          ),
+        },
+        {
+          name: "CSS3",
+          logo: (
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+              alt="CSS3"
+              width="65"
+              height="65"
+            />
+          ),
+        },
+        {
+          name: "JavaScript",
+          logo: (
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              width="50"
+              height="50"
+            />
+          ),
+        },
+        {
+          name: "React",
+          logo: (
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+              alt="React"
               width="60"
               height="60"
             />
@@ -151,13 +182,16 @@ const Projects = () => {
         },
       ],
     },
+
     {
       id: 5,
-      title: "RestaurantMenuManager",
+      title: "StudentSortedGroupManager",
       description:
-        "RestaurantMenuManager project using Java and JavaFX. An application for managing and interacting with a restaurant menu.",
+        "Student Sorted Group Manager project that manages a sorted group of students and allows users to add and remove students interactively.",
       liveDemo: "",
-      sourceCode: "https://github.com/EladReuveny/restaurant-menu-manager",
+      sourceCode: {
+        backend: "https://github.com/EladReuveny/student-sorted-group-manager",
+      },
       technologies: [
         {
           name: "Java",
@@ -174,11 +208,13 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "TrafficLight",
+      title: "RestaurantMenuManager",
       description:
-        "Traffic light simulation project using Java, JavaFX, and multithreading.",
+        "RestaurantMenuManager project using Java and JavaFX. An application for managing and interacting with a restaurant menu.",
       liveDemo: "",
-      sourceCode: "https://github.com/EladReuveny/TrafficLight",
+      sourceCode: {
+        backend: "https://github.com/EladReuveny/restaurant-menu-manager",
+      },
       technologies: [
         {
           name: "Java",
@@ -195,11 +231,36 @@ const Projects = () => {
     },
     {
       id: 7,
+      title: "TrafficLight",
+      description:
+        "Traffic light simulation project using Java, JavaFX, and multithreading.",
+      liveDemo: "",
+      sourceCode: {
+        backend: "https://github.com/EladReuveny/TrafficLight",
+      },
+      technologies: [
+        {
+          name: "Java",
+          logo: (
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+              alt="Java"
+              width="60"
+              height="60"
+            />
+          ),
+        },
+      ],
+    },
+    {
+      id: 8,
       title: "PersonalFinance",
       description:
         "Personal Finance App project contains 5 pages (Overview, Transactions, Budgets, Pots, and Recurring Bills) + supports responsiveness for Desktop/Tablet/Moible Design.",
       liveDemo: "https://idyllic-treacle-59d4ed.netlify.app/",
-      sourceCode: "https://github.com/EladReuveny/personal-finance",
+      sourceCode: {
+        frontend: "https://github.com/EladReuveny/personal-finance",
+      },
       technologies: [
         {
           name: "HTML5",
@@ -260,9 +321,24 @@ const Projects = () => {
             </ul>
             <i className="fa-sharp fa-solid fa-down-long"></i>
             <div className="projects__project-links">
-              <a href={project.sourceCode} target="_blank" title="Source Code">
-                <i className="fas fa-code"></i>
-              </a>
+              {project.sourceCode.backend && (
+                <a
+                  href={project.sourceCode.backend}
+                  target="_blank"
+                  title="Backend Source Code"
+                >
+                  <i className="fas fa-code"></i>
+                </a>
+              )}
+              {project.sourceCode.frontend && (
+                <a
+                  href={project.sourceCode.frontend}
+                  target="_blank"
+                  title="Frontend Source Code"
+                >
+                  <i className="fas fa-code"></i>
+                </a>
+              )}
               {project.liveDemo && (
                 <a href={project.liveDemo} target="_blank" title="Live Demo">
                   <i className="fa-solid fa-arrow-up-right-from-square"></i>

@@ -259,6 +259,7 @@ const Projects = () => {
         "Personal Finance App project contains 5 pages (Overview, Transactions, Budgets, Pots, and Recurring Bills) + supports responsiveness for Desktop/Tablet/Moible Design.",
       liveDemo: "https://idyllic-treacle-59d4ed.netlify.app/",
       sourceCode: {
+
         frontend: "https://github.com/EladReuveny/personal-finance",
       },
       technologies: [

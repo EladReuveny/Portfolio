@@ -35,6 +35,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
                 alt="Java"
+                width={60}
+                height={60}
               />
             </a>
 
@@ -48,6 +50,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
                 alt="HTML5"
+                width={60}
+                height={60}
               />
             </a>
 
@@ -61,6 +65,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
                 alt="CSS3"
+                width={60}
+                height={60}
               />
             </a>
 
@@ -74,6 +80,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
                 alt="JavaScript"
+                width={50}
+                height={50}
               />
             </a>
 
@@ -87,6 +95,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
                 alt="C"
+                width={60}
+                height={60}
               />
             </a>
 
@@ -100,6 +110,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
                 alt="C++"
+                width={60}
+                height={60}
               />
             </a>
 
@@ -113,6 +125,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
                 alt="Python"
+                width={60}
+                height={60}
               />
             </a>
           </div>
@@ -133,19 +147,23 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
                 alt="React"
+                width={65}
+                height={65}
               />
             </a>
 
             <a
-              href="https://spring.io/"
+              href="https://spring.io/projects/spring-boot"
               target="_blank"
               rel="noreferrer"
-              title="Spring"
-              data-label="Spring"
+              title="Spring Boot"
+              data-label="Spring Boot"
             >
               <img
                 src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
-                alt="Spring"
+                alt="Spring Boot"
+                width={60}
+                height={60}
               />
             </a>
 
@@ -159,6 +177,8 @@ const About = () => {
               <img
                 src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
                 alt="TailwindCSS"
+                width={60}
+                height={60}
               />
             </a>
           </div>
@@ -179,6 +199,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
                 alt="PostgreSQL"
+                width={70}
+                height={70}
               />
             </a>
 
@@ -192,6 +214,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
                 alt="MySQL"
+                width={75}
+                height={75}
               />
             </a>
           </div>
@@ -212,6 +236,8 @@ const About = () => {
               <img
                 src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
                 alt="Git"
+                width={60}
+                height={60}
               />
             </a>
 
@@ -225,6 +251,8 @@ const About = () => {
               <img
                 src="https://www.vectorlogo.zone/logos/github/github-icon.svg"
                 alt="GitHub"
+                width={65}
+                height={65}
               />
             </a>
 
@@ -238,6 +266,23 @@ const About = () => {
               <img
                 src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
                 alt="Postman"
+                width={55}
+                height={55}
+              />
+            </a>
+
+            <a
+              href="https://www.docker.com/"
+              target="_blank"
+              rel="noreferrer"
+              title="Docker"
+              data-label="Docker"
+            >
+              <img
+                src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"
+                alt="Docker"
+                width={80}
+                height={80}
               />
             </a>
 
@@ -251,6 +296,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
                 alt="Linux"
+                width={60}
+                height={60}
               />
             </a>
 
@@ -264,6 +311,8 @@ const About = () => {
               <img
                 src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
                 alt="Figma"
+                width={55}
+                height={55}
               />
             </a>
 
@@ -277,6 +326,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original-wordmark.svg"
                 alt="Visual Studio Code"
+                width={55}
+                height={55}
               />
             </a>
 
@@ -290,6 +341,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/intellij/intellij-original.svg"
                 alt="IntelliJ IDEA"
+                width={55}
+                height={55}
               />
             </a>
 
@@ -303,6 +356,8 @@ const About = () => {
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/clion/clion-original.svg"
                 alt="CLion"
+                width={55}
+                height={55}
               />
             </a>
           </div>

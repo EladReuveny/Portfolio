@@ -12,8 +12,8 @@ const Services = () => {
           <i className="fas fa-code"></i>
           <h3 className="services__service-title">Frontend Development</h3>
           <p className="services__service-text">
-            Building interactive, responsive user interfaces that deliver
-            seamless user experiences.
+            Designing and developing interactive, responsive user interfaces
+            that deliver seamless and engaging user experiences.
           </p>
           <ul className="services__service-tech">
             <li>
@@ -37,8 +37,9 @@ const Services = () => {
           <span className="material-symbols-outlined">data_object</span>
           <h3 className="services__service-title">Backend Development</h3>
           <p className="services__service-text">
-            Creating and optimizing robust server-side applications and APIs
-            connecting frontend and backend.
+            Building and optimizing robust server-side applications and APIs
+            that seamlessly connect frontend and backend, with containerized
+            deployment using Docker.
           </p>
           <ul className="services__service-tech">
             <li>
@@ -48,14 +49,17 @@ const Services = () => {
               <i className="fa-regular fa-circle-check"></i>Spring Boot
             </li>
             <li>
-              <i className="fa-regular fa-circle-check"></i>SQL, MySQL,
-              PostgreSQL
+              <i className="fa-regular fa-circle-check"></i>PostgreSQL, MySQL
             </li>
             <li>
               <i className="fa-regular fa-circle-check"></i>Database Management
             </li>
             <li>
               <i className="fa-regular fa-circle-check"></i>RESTful APIs
+            </li>
+            <li>
+              <i className="fa-regular fa-circle-check"></i>Docker &
+              Containerization
             </li>
           </ul>
         </div>

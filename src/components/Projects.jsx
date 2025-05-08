@@ -4,9 +4,9 @@ const Projects = () => {
   const projectsData = [
     {
       id: 1,
-      title: "Electronics E-Commerce Shop",
+      title: "Electronics - E-Commerce Platform",
       description:
-        "Developed a full-stack e-commerce application for electronics with secure authentication, product management, wishlist, shopping cart, order processing, etc.",
+        "Built a full-stack electronics store with Spring Boot, React, and PostgreSQL featuring secure auth, data management, RESTful APIs and more.",
       liveDemo: "https://electronics-store-app.netlify.app",
       sourceCode: {
         backend: "https://github.com/EladReuveny/electronics-store-api",
@@ -18,7 +18,7 @@ const Projects = () => {
           logo: (
             <img
               src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
-              alt="Spring"
+              alt="Spring Boot"
               width="60"
               height="60"
             />
@@ -259,7 +259,6 @@ const Projects = () => {
         "Personal Finance App project contains 5 pages (Overview, Transactions, Budgets, Pots, and Recurring Bills) + supports responsiveness for Desktop/Tablet/Moible Design.",
       liveDemo: "https://idyllic-treacle-59d4ed.netlify.app/",
       sourceCode: {
-
         frontend: "https://github.com/EladReuveny/personal-finance",
       },
       technologies: [
